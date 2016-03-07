@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>My Learning</title>
+    <base href="/" />
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+
+    <link href="dist/app.css" rel="stylesheet/less" />
+</head>
+<body class="container-fluid" ng-app="myLearning">
+
+    <header class="headerDiv row">
+        <div class="headerTitle col-xs-4">
+            My Learning
+        </div>
+        <a href="knowHow">
+            <div class="glyphicon-question-sign"></div>
+        </a>
+    </header>
+    <div class="row">
+        <ng-include src="'app/shared/nav/nav.html'"></ng-include>
+        <div ng-view class="col-xs-10 slide-animation">
+
+        </div>
+    </div>
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular-route/angular-route.min.js"></script>
+    <script src="lib/angular-animate/angular-animate.min.js"></script>
+    <script src="lib/less/dist/less.min.js"></script>
+
+    <script src="dist/myLearning.js">
+    </script>
+</body>
+</html>

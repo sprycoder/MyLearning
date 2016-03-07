@@ -1,0 +1,9 @@
+﻿<div ng-controller="navController">
+    <ul id="appNav" class="nav nav-pills nav-stacked col-xs-2" ng-click="changeActiveNav($event)">
+        <li ng-repeat="name in moduleNames">
+            <a data-target="#" data-toggle="pill" href="{{name| lowercase}}">
+                {{name}}
+            </a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>My Learning</title>
+    <base href="/" />
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="assets/styles/custom.less" type="text/css" rel="stylesheet/less" />
+    <link href="assets/styles/animation.less" type="text/css" rel="stylesheet/less" />
+</head>
+<body class="container-fluid" ng-app="myLearning">
+
+    <header class="headerDiv row">
+        <div class="headerTitle col-xs-4">
+            My Learning
+        </div>
+        <a href="knowHow">
+            <div class="glyphicon-question-sign"></div>
+        </a>
+    </header>
+    <div class="row">
+        <ng-include src="'app/shared/nav/nav.html'"></ng-include>
+        <div ng-view class="col-xs-10 slide-animation">
+
+        </div>
+    </div>
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular-route/angular-route.min.js"></script>
+    <script src="lib/angular-animate/angular-animate.min.js"></script>
+    <script src="lib/less/dist/less.min.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/modules/dashboard/dashboardModule.js"></script>
+    <script src="app/modules/glossary/glossaryModule.js"></script>
+    <script src="app/modules/reference/referenceModule.js"></script>
+    <script src="app/modules/knowHow/knowHowModule.js"></script>
+
+    <script src="app/modules/glossary/glossaryFactory.js"></script>
+    <script src="app/modules/reference/referenceFactory.js"></script>
+
+    <script src="app/shared/nav/navController.js"></script>
+    <script src="app/modules/dashboard/dashboardController.js"></script>
+    <script src="app/modules/glossary/glossaryController.js"></script>
+    <script src="app/modules/reference/referenceController.js"></script>
+    <script src="app/modules/knowHow/knowHowController.js"></script>
+
+    <script src="app/modules/dashboard/dashboardDirective.js"></script>
+    <script src="app/modules/glossary//glossaryDirective.js"></script>
+    <script src="app/modules/knowHow/knowHowDirective.js"></script>
+    <script src="app/modules/reference/referenceDirective.js"></script>
+</body>
+</html>

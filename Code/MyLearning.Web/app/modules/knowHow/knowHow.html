@@ -1,0 +1,88 @@
+﻿<div ng-controller="knowHowController">
+    <div class="page-header">
+        <h1>How I did it?</h1>
+    </div>
+
+    <a class="row h3" data-toggle="collapse" data-target="#steps">Steps to follow : </a>
+
+    <ol id="steps" class="collase in">
+        <li><p><ins>Setup Web project</ins> - create empty Website. Create folder structure.</p></li>
+        <li><p><ins>Setup Web API project</ins> - add Web API 2 Empty project.</p></li>
+        <li><p><ins>Setup external reference through Bower</ins> - add Bower file. Add <b>.bowerrc</b> which is used to set the target location for referenced libraries.</p></li>
+        <li><p><ins>Add Bootstrap</ins> - add bootstrap in Bower.json. Add bootstrap css and js files in index.html. Add corresponding classes in html files. Ref <a href="http://getbootstrap.com/components/" target="_newtab">http://getbootstrap.com/components/</a> </p></li>
+        <li><p><ins>Add routing</ins> - add angular-route. Add individual routes in app.js</p></li>
+        <li><p><ins>Add custom.less</ins> - add less in bower.json and add reference to js file in index.html</p></li>
+        <li><p><ins>Enable CORS</ins> Add package for WebApi.CORS and <code>EnableCorsAttribute</code>for Cross Origin Resource Sharing in WebApiConfig by defining url of website.</p></li>
+        <li><p><ins>JSON formatting</ins> - set <code>JsonFormatter</code>ContractResolver as <code>CamelCasePropertyNamesContractResolver</code></p></li>
+        <li><p><ins>Remove # from url</ins> - set base href and set <code>$locationProvider.html5Mode(true)</code> in app.js</p></li>
+        <li><p><ins>Resolve page refresh issue</ins> - add web.config in Web site project and set rules and conditions to rewrite url.</p></li>
+        <li><p><ins>Flexible nav and page header</ins> - create MODULE_NAMES constant in app.js and use that for rendering navs and page header.</p></li>
+        <li></li>
+        <li></li>
+    </ol>
+    <br />
+
+    <a class="row h3" data-toggle="collapse" data-target="#todo">To Do : </a>
+
+    <ol id="todo" class="collase in">
+        <li><p>JsLint</p></li>
+        <li><p>Implement BDD and specflow</p></li>
+        <li><p>Implement grunt or grunt and use consolidated minified js and css file</p></li>
+        <li><p>Authentication</p></li>
+        <li><p>Caching</p></li>
+        <li><p>Widgets</p></li>
+        <li><p>Charts</p></li>
+        <li><p>Custom Directives</p></li>
+        <li><p>Exception handling</p></li>
+        <li><p>Notification</p></li>
+        <li><p>Grid and Chart service</p></li>
+        <li><p>Loading bar and spin</p></li>
+        <li><p>Auto update</p></li>
+        <li><p>Jasmine tests</p></li>
+    </ol>
+    <br />
+    <a class="row h3" data-toggle="collapse" data-target="#techStack">Tech stack : </a>
+
+    <ol id="techStack" class="collase in">
+        <li>
+            <p>
+                <a data-toggle="collapse" data-target="#angularjs">Angular JS 1.5</a>
+            </p>
+            <ul id="angularjs" class="collapse in">
+                <li><p>Angular-Animation</p></li>
+                <li><p>ngRoute</p></li>
+                <li><p>Angular-Animation</p></li>
+                <li><p>Angular-Animation</p></li>
+                <li><p>Constants</p></li>
+                <li><p>Directives (DDO)</p></li>
+                <li><p>Factory</p></li>
+                <li><p>Module</p></li>
+                <li><p>$locationProvider</p></li>
+                <li><p>HTML 5 (without #)</p></li>
+                <li><del>Cross-module communication</del></li>
+                <li><del>Watch</del></li>
+            </ul>
+        </li>
+        <li><p>Bootstrap 3.0</p></li>
+        <li><p>Bower</p></li>
+        <li><p>JQuery 2.2</p></li>
+        <li>
+            <p>
+                <a data-toggle="collapse" data-target="#less">LESS 2.6</a>
+            </p>
+            <ul id="less" class="collapse in">
+                <li><p>variable declaration</p></li>
+                <li><p>mixins</p></li>
+            </ul>
+        </li>
+        <li>
+            <p>
+                <a data-toggle="collapse" data-target="#packages">nuGet Packages</a>
+            </p>
+            <ul id="packages" class="collapse in">
+                <li><p>Newtonsoft.Json.6.0.4</p></li>
+                <li><p>Microsoft.AspNet.WebApi.Cors.5.2.3</p></li>
+            </ul>
+        </li>
+    </ol>
+</div>
