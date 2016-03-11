@@ -1,0 +1,62 @@
+{
+  "name": "myLearning",
+  "version": "1.0.0",
+  "description": "my learning application",
+  "main": "app.js",
+  "bin": "./npmPackages",
+  "devDependencies": {
+    "glob": "^7.0.3",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-less": "^3.0.5",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-clean": "^0.3.2",
+    "gulp-size": "^2.0.0",
+    "jshint-stylish": "^2.1.0",
+    "gulp-cache": "^0.4.2",
+    "gulp-header": "^1.7.1",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-load-utils": "^0.0.4",
+    "chalk": "^1.1.1",
+    "dateformat": "^1.0.12",
+    "minimist": "^1.2.0"
+  },
+  "author": "Vikas Vaidya",
+  "webroot": "../",
+  "webapp": "../app",
+  "dest": "../MyLearning.Web/dist/dev/",
+  "paths": {
+    "source": {
+      "less": [
+        "../MyLearning.Web/content/styles/*.less"
+      ],
+      "js": [
+        "../MyLearning.Web/app/app.js",
+        "../MyLearning.Web/app/modules/dashboard/dashboardModule.js",
+        "../MyLearning.Web/app/modules/glossary/glossaryModule.js",
+        "../MyLearning.Web/app/modules/knowHow/knowHowModule.js",
+        "../MyLearning.Web/app/modules/reference/referenceModule.js",
+        "../MyLearning.Web/app/**/*.js"
+      ],
+      "images": [
+        "../MyLearning.Web/content/images/**/*"
+      ]
+    },
+    "dest": {
+      "base": "../MyLearning.Web/dist/dev/",
+      "css": "../MyLearning.Web/dist/dev/content/",
+      "js": "../MyLearning.Web/dist/dev/js/",
+      "images": "../MyLearning.Web/dist/dev/content/images"
+    },
+    "production": "../MyLearning.Web/dist/prod/"
+  },
+  "dependencies": {
+    "latest-version": "^2.0.0"
+  }
+}
