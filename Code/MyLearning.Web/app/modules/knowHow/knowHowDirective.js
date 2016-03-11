@@ -1,16 +1,16 @@
 ﻿(function () {
-    'use strict';
+    "use strict";
 
     var knowHowDirective = function () {
         var directive = {
-            restrict: 'E',
+            restrict: "E",
             templateUrl: "app/modules/knowHow/knowHow.html"
         };
         return directive;
     };
 
     angular
-    .module('knowHowModule')
-    .directive('knowHowView', knowHowDirective);
+    .module("knowHowModule")
+    .directive("knowHowView", knowHowDirective);
 
 })();

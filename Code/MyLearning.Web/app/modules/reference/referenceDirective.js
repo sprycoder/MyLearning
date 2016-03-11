@@ -1,16 +1,16 @@
 ﻿(function () {
-    'use strict';
+    "use strict";
 
     var referenceDirective = function () {
         var directive = {
-            restrict: 'E',
+            restrict: "E",
             templateUrl: "app/modules/reference/reference.html"
         };
         return directive;
     };
 
     angular
-    .module('referenceModule')
-    .directive('referenceView', referenceDirective);
+    .module("referenceModule")
+    .directive("referenceView", referenceDirective);
 
 })();

@@ -13,22 +13,22 @@
         $locationProvider.html5Mode(true);
 
         $routeProvider
-        .when('/dashboard', {
+        .when("/dashboard", {
             controller: "dashboardController",
             template: "<dashboard-view></dashboard-view>"
         })
 
-        .when('/glossary', {
+        .when("/glossary", {
             controller: "glossaryController",
             template: "<glossary-view></glossary-view>"
         })
 
-        .when('/reference', {
+        .when("/reference", {
             controller: "referenceController",
             template: "<reference-view></reference-view>"
         })
 
-        .when('/knowhow', {
+        .when("/knowhow", {
             controller: "knowHowController",
             template: "<know-how-view></know-how-view>"
         })

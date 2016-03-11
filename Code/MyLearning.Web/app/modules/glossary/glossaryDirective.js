@@ -1,16 +1,16 @@
 ﻿(function () {
-    'use strict';
+    "use strict";
 
     var glossaryDirective = function () {
         var directive = {
-            restrict: 'E',
+            restrict: "E",
             templateUrl: "app/modules/glossary/glossary.html"
         };
         return directive;
     };
 
     angular
-    .module('glossaryModule')
-    .directive('glossaryView', glossaryDirective);
+    .module("glossaryModule")
+    .directive("glossaryView", glossaryDirective);
 
 })();

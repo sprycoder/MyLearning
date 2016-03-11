@@ -31,14 +31,14 @@ module.exports = function (grunt) {
                     sycImport: true
                 },
                 files: {
-                    "dist/app.css": "assets/styles/*.less"
+                    "dist/app.css": "content/styles/*.less"
                 }
             }
         },
 
         watch: {
             src: {
-                files: ["app/**.*", "assets/**.*"],
+                files: ["app/**.*", "content/**.*"],
                 tasks: ["devCode"]
             }
         }

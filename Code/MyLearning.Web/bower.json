@@ -6,7 +6,6 @@
     "angular": "1.5",
     "angular-ui": "*",
     "angular-route": "*",
-    "angular-animate": "*",
-    "less": "*"
+    "angular-animate": "*"
   }
 }

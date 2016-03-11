@@ -1,12 +1,16 @@
 ﻿(function () {
-    angular.module("referenceModule").factory("referenceFactory", ["$http",
-        function ($http) {
-            var factory = {};
+    var referenceFactory = function ($http) {
+        var factory = {};
 
-            factory.getReferences = function () {
-                return $http.get("http://localhost:62826/api/reference");
-            };
+        factory.getReferences = function () {
+            return $http.get("http://localhost:62826/api/reference");
+        };
 
-            return factory;
-        }]);
+        return factory;
+    };
+
+    referenceFactory.inject = ["$http"];
+
+    angular.module("referenceModule").factory("referenceFactory", referenceFactory);
+
 })();
