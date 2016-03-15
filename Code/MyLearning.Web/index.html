@@ -18,6 +18,7 @@
             <div class="glyphicon-question-sign"></div>
         </a>
     </header>
+    <notification-view></notification-view>
     <div class="row">
         <ng-include src="'app/shared/nav/nav.html'"></ng-include>
         <div ng-view class="col-xs-10 slide-animation">
@@ -25,13 +26,39 @@
         </div>
     </div>
 
+    <!--vendor js files-->
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="lib/angular/angular.min.js"></script>
     <script src="lib/angular-route/angular-route.min.js"></script>
     <script src="lib/angular-animate/angular-animate.min.js"></script>
 
-    <script src="dist/dev/js/myLearning.min.js">
-    </script>
+    <!--<script src="dist/dev/js/myLearning.min.js">-->
+    <!--project js files-->
+    <script src="app/app.js"></script>
+    <script src="app/modules/dashboard/dashboardModule.js"></script>
+    <script src="app/modules/glossary/glossaryModule.js"></script>
+    <script src="app/modules/reference/referenceModule.js"></script>
+    <script src="app/modules/knowHow/knowHowModule.js"></script>
+
+    <script src="app/config/exceptionHandler.js"></script>
+    <script src="app/config/httpInterceptor.js"></script>
+    <script src="app/shared/notification/notificationService.js"></script>
+    <script src="app/shared/notification/notificationController.js"></script>
+    <script src="app/shared/notification/notificationDirective.js"></script>
+
+    <script src="app/modules/glossary/glossaryFactory.js"></script>
+    <script src="app/modules/reference/referenceFactory.js"></script>
+
+    <script src="app/shared/nav/navController.js"></script>
+    <script src="app/modules/dashboard/dashboardController.js"></script>
+    <script src="app/modules/glossary/glossaryController.js"></script>
+    <script src="app/modules/reference/referenceController.js"></script>
+    <script src="app/modules/knowHow/knowHowController.js"></script>
+
+    <script src="app/modules/dashboard/dashboardDirective.js"></script>
+    <script src="app/modules/glossary/glossaryDirective.js"></script>
+    <script src="app/modules/knowHow/knowHowDirective.js"></script>
+    <script src="app/modules/reference/referenceDirective.js"></script>
 </body>
 </html>

@@ -8,9 +8,11 @@
                         "knowHowModule",
                         "ngRoute"]);
 
-    app.config(function ($routeProvider, $locationProvider) {
+    app.config(function ($routeProvider, $locationProvider, $httpProvider) {
 
         $locationProvider.html5Mode(true);
+
+        $httpProvider.interceptors.push("httpInterceptor");
 
         $routeProvider
         .when("/dashboard", {
