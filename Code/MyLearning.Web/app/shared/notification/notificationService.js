@@ -5,15 +5,6 @@
         var currentAlerts = [];
         var alertTypes = ["info", "warning", "success", "danger"];
 
-        var addAlert = function (type, message) {
-            var alert = { type: type, message: message };
-            currentAlerts.push(alert);
-
-            $timeout(function () {
-                removeAlert(alert);
-            }, 5000);
-        };
-
         var removeAlert = function (alert) {
             for (var counter = 0; counter < currentAlerts.length; counter++) {
                 if (currentAlerts[counter] === alert) {
@@ -21,6 +12,15 @@
                     break;
                 }
             }
+        };
+
+        var addAlert = function (type, message) {
+            var alert = { type: type, message: message };
+            currentAlerts.push(alert);
+
+            $timeout(function () {
+                removeAlert(alert);
+            }, 5000);
         };
 
         var serverErrorHandler = function (type, message) {

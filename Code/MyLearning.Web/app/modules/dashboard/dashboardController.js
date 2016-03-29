@@ -4,7 +4,7 @@
 
         $scope.showAlert = function () {
             notification.addAlert("danger", "I'm clicked");
-        }
+        };
     };
 
     dashboardController.inject = ["$scope", "MODULE_NAMES"];

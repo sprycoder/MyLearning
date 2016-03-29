@@ -17,7 +17,7 @@
                 scope.currentAlerts = notification.currentAlerts;
             }
         };
-    }
+    };
 
     angular.module("myLearning")
            .directive("notificationView", notificationDirective);

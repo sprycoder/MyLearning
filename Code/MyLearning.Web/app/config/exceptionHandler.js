@@ -6,7 +6,7 @@
                     return function (exception, cause) {
                         $delegate(exception, cause);
 
-                        var notification = $injector.get("notification")
+                        var notification = $injector.get("notification");
                         notification.addDanger(exception.message);
                     };
                 });

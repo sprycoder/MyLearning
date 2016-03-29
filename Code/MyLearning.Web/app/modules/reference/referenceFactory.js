@@ -1,15 +1,15 @@
 ﻿(function () {
-    var referenceFactory = function ($http) {
+    var referenceFactory = function ($http, appSettings) {
         var factory = {};
 
         factory.getReferences = function () {
-            return $http.get("http://localhost:62826/api/reference");
+            return $http.get(appSettings.serverPath + "api/reference");
         };
 
         return factory;
     };
 
-    referenceFactory.inject = ["$http"];
+    referenceFactory.inject = ["$http", "appSettings"];
 
     angular.module("referenceModule").factory("referenceFactory", referenceFactory);
 

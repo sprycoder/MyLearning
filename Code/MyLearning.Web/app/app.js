@@ -43,4 +43,8 @@
         GLOSSARY: "Glossary",
         REFERENCE: "Reference"
     });
+
+    app.constant("appSettings", {
+        serverPath: "http://localhost:62826/"
+    });
 }());
