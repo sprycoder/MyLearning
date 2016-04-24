@@ -10,6 +10,8 @@
 
     app.config(function ($routeProvider, $locationProvider, $httpProvider) {
 
+        $httpProvider.defaults.withCredentials = true;
+
         $locationProvider.html5Mode(true);
 
         $httpProvider.interceptors.push("httpInterceptor");

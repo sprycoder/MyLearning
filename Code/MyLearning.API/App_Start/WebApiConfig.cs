@@ -12,6 +12,7 @@ namespace MyLearning.API
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
+            WebApiUnityConfig.RegisterComponents();
 
             // Web API routes
             config.MapHttpAttributeRoutes();
