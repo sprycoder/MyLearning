@@ -16,6 +16,7 @@
 
         $httpProvider.interceptors.push("httpInterceptor");
 
+        $routeProvider.case
         $routeProvider
         .when("/dashboard", {
             controller: "dashboardController",
@@ -37,6 +38,14 @@
             template: "<know-how-view></know-how-view>"
         })
 
+        .when("/error403", {
+            templateUrl: "/content/errorPages/error403.html"
+        })
+
+        .when("/error404", {
+            templateUrl: "/content/errorPages/error404.html"
+        })
+
         .otherwise({ redirectTo: "/dashboard" });
     });
 
@@ -49,4 +58,27 @@
     app.constant("appSettings", {
         serverPath: "http://localhost:62826/"
     });
+
+    //angular.module("myLearning")
+    //    .run(["$rootScope", "$location", "authFactory", function ($rootScope, $location, authFactory) {
+    //        authFactory.initUser()
+    //            .then(function (data) {
+    //                if (data != null && data.IsAuthenticated) {
+    //                    sessionStorage.setItem("user.name", data.Name);
+    //                    sessionStorage.setItem("user.userId", data.UserId);
+    //                    $rootScope.$broadcast("REFRESH");
+    //                } else {
+    //                    $location.path("error403");
+    //                }
+    //            }, function (error) {
+    //                console.log("Something went wrong", error);
+    //                $location.path("error403");
+    //            });
+
+    //        $rootScope.$on("$routeChangeStart", function () {
+    //            if (!authFactory.isLoggedIn) {
+    //                authFactory.initUser();
+    //            }
+    //        });
+    //    }])
 }());

@@ -13,12 +13,13 @@
             },
             responseError: function (response) {
                 var httpStatusCode = response.status !== undefined ? response.status : 400;
+                var message = (typeof response === "object") ? response.data.exceptionMessage : response;
                 switch (httpStatusCode) {
                     case 500:
-                        notification.addDanger(response);
+                        notification.addDanger(message);
                         break;
                     case -1:
-                        notification.addDanger(response);
+                        notification.addDanger(message);
                         break;
                     default:
                         if (response.config.method === "POST") {
