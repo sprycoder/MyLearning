@@ -6,6 +6,10 @@
     "angular": "1.5",
     "angular-ui": "*",
     "angular-route": "*",
-    "angular-animate": "*"
+    "angular-animate": "*",
+    "angular-ui-grid": "*"
+  },
+  "resolutions": {
+    "angular": "1.5.0"
   }
 }

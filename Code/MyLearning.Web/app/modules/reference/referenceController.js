@@ -1,13 +1,13 @@
 ﻿(function () {
     var referenceController = function ($scope, MODULE_NAMES, referenceFactory) {
 
-        $scope.data = {};
+        $scope.gridOptions = {};
         $scope.viewName = MODULE_NAMES.REFERENCE;
 
         function init() {
             referenceFactory.getReferences()
                 .success(function (references) {
-                    $scope.data.referenceItems = references;
+                    $scope.gridOptions.data = references;
                 })
                 .error(function (data, status, headers, config) {
                     console.log(data, status);

@@ -6,7 +6,8 @@
                         "glossaryModule",
                         "referenceModule",
                         "knowHowModule",
-                        "ngRoute"]);
+                        "ngRoute",
+                        "ui.grid"]);
 
     app.config(function ($routeProvider, $locationProvider, $httpProvider) {
 
@@ -16,7 +17,6 @@
 
         $httpProvider.interceptors.push("httpInterceptor");
 
-        $routeProvider.case
         $routeProvider
         .when("/dashboard", {
             controller: "dashboardController",

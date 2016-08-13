@@ -1,13 +1,13 @@
 ﻿(function () {
     var glossaryController = function ($scope, MODULE_NAMES, glossaryFactory) {
 
-        $scope.data = {};
+        $scope.gridOptions = {};
         $scope.viewName = MODULE_NAMES.GLOSSARY;
 
         function init() {
             glossaryFactory.getGlossaries()
                 .success(function (glossaries) {
-                    $scope.data.glossaryItems = glossaries;
+                    $scope.gridOptions.data = glossaries;
                 })
                 .error(function (data, status, headers, config) {
                     console.log(data, status);

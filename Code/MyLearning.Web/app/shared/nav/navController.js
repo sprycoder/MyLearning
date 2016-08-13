@@ -16,11 +16,11 @@
         vm.authUser = function () {
             authFactory.initUser()
                     .then(function (data) {
-                        if (data && data.IsAuthenticated) {
+                        if (data && data.isAuthenticated) {
                             sessionStorage.setItem("user.name", data.Name);
                             sessionStorage.setItem("user.userId", data.UserId);
                             $rootScope.$broadcast("REFRESH");
-                        } else if (data && !data.IsAuthenticated) {
+                        } else if (data && !data.isAuthenticated) {
                             sessionStorage.setItem("user.name", data.Name);
                             sessionStorage.setItem("user.userId", data.UserId);
                             $location.path("error403");
